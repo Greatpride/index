@@ -1,0 +1,342 @@
+@charset "utf-8";
+/* CSS Document */
+/*默认样式的清除*/
+
+a{
+	text-decoration-line: none;
+	color:inherit;
+}
+#all{
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	height: auto;
+}
+/*导航部分样式*/
+#nav{
+	width: 1920px;
+	height: 700px;
+	background-image: url(../pic/navbackground.jpg);
+}
+div#nav #navslip{
+	width: 1920px;
+	height: 90px;
+	background-color: rgba(255,255,255,.75)
+}
+div#navslip span{
+	font-family: "微软雅黑";
+	font-size: 24px;
+	color: black;
+	position: relative;
+	left: 360px;
+	top:25px;
+}
+div#nav #navop{
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	left:1230px;
+}
+div#navop a{
+	font-family: "微软雅黑";
+	font-size: 15.9px;
+	color: black;
+	margin-left: 40px;
+}
+div#navop a:hover{
+	color: pink;
+}
+/*热门圈子*/
+#content{
+	width: 1920px;
+	height: 600px;
+	background-image: url(../pic/background1.jpg);
+}
+div#content h{
+	font-family: "幼圆";
+	font-size: 47.95px;
+	color: black;
+	text-align: center;
+	position: relative;
+	left: 900px;
+	top: 87px;
+}
+#contentbox{
+	width: 1920px;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-bottom: 125px;
+	padding-top: 100px;
+}
+div#contentbox .box{
+	width: 340px;
+	height: 340px;
+	margin-left: 135px;
+}
+div#contentbox .box .c{
+	font-family: "微软雅黑";
+	font-size:35.97px;
+	color: white;
+	position: relative;
+    top: -58%;
+    left: 22%;
+}
+div#contentbox .box a img{
+	cursor: pointer;
+	transition: all 0.6s;
+}
+div#contentbox .box a img:hover{
+	transform: scale(1.2);
+}
+/*注册界面*/
+#userlog{
+	width: 1920px;
+	height:600px;
+	background-image: url(../pic/background2.jpg);
+}
+div#userlog #logbox{
+	width: 595px;
+	height: 450px;
+	background-color: white;
+	border-radius:10px;
+    position: relative;
+	left: 680px;
+	top:70px;
+}
+#logbox span{
+	font-family: "幼圆";
+	font-size:36.2px;
+	color:black;
+	position: relative;
+	left: 215px;
+	top:40px;
+}
+.inputtext{
+	width: 414px;
+	border-bottom: 1px solid #dbdbdb;  
+    border-top:0px;  
+    border-left:0px;  
+    border-right:0px;  
+	display: flex;
+	flex-direction: column;
+	padding-top: 30px;
+	position: relative;
+	left:80px;
+	top:50px;
+}
+
+.inputtext[placeholder]{
+	font-family: "幼圆";
+	font-size: 24px;
+	color: black;
+}
+div#logbox button{
+	width: 414px;
+	height:40px;
+	background-color:#ffe5e8;
+	border-radius:10px;
+	position: relative;
+	top:85px;
+	left:85px;
+	font-family: "幼圆";
+	font-size: 24px;
+}
+/*热门动态*/
+#trend{
+	width: 1920px;
+	height: 1600px;
+	background-image: url(../pic/background1.jpg);
+	overflow: scroll;
+}
+#trend h{
+	font-family: "幼圆";
+	font-size: 47.98px;
+	color: black;
+	position: relative;
+	left: 855px;
+	top: 70px;
+}
+#container{
+	position:relative;
+	width: auto;
+	height: auto;
+	top: 100px;
+}
+
+.box{
+	padding:46px;
+	float:left;
+}
+
+.box_img{
+	border:none;
+	box-shadow: 0 0 5px #cccccc;
+	transition:all 1s;
+}
+.box_img:hover{
+	box-shadow:30px 30px 30px #ccc;
+	transition:all 1s;
+}
+.box_img:hover{
+	box-shadow:30px 30px 30px #ccc;
+}
+
+.box_img img.main{
+	width: 366px;
+	height: auto;
+
+}
+.box_img img.main:hover{
+
+}
+
+div.box_img p.title{
+	font-family: "微软雅黑";
+	font-size: 36px;
+	color: black;
+	padding-left: 20px;
+	margin-top: 6px;
+}
+.box_img p.a{
+	font-family: "微软雅黑";
+	font-size:16px;
+	padding-left:20px;
+	margin-top: -25px;
+}
+.iconbox{
+	display: flex;
+	flex-direction: row;
+	margin-left: 20px;
+}
+.iconbox p.b{
+	font-family: "Helvetica Light";
+	font-size: 16px;
+	color: #b3b3b3;
+	margin-left:11px;
+	margin-right: 27px;
+	margin-top: -4px;
+}
+.iconbox .xin{
+	width: 20px;
+	height: 20px;
+	background-image: url(../pic/icon1.jpg)
+}
+.iconbox .xin:hover{
+	background-image: url(../pic/icon11.jpg)
+}
+.iconbox .hua{
+	width: 20px;
+	height: 20px;
+	background-image: url(../pic/icon2.jpg)
+}
+.iconbox .hua:hover{
+	background-image: url(../pic/icon22.jpg)
+}
+.iconbox .xing{
+	width: 20px;
+	height: 20px;
+	background-image: url(../pic/icon3.jpg)
+}
+.iconbox .xing:hover{
+	background-image: url(../pic/icon33.jpg)
+}
+.userbox{
+	display: flex;
+	flex-direction: row;
+	margin-left: 20px;
+	margin-top: 27px;
+}
+.userbox p.c{
+	font-family: "Helvetica Light";
+	font-size: 23px;
+	color: black;
+	margin-left: 15px;
+	margin-top: 0;
+}
+.userbox #userimg01{
+	width: 40px;
+	height: 40px;
+	background-image: url(../pic/user1.jpg)
+}
+.userbox #userimg02{
+	width: 43px;
+	height: 44px;
+	background-image: url(../pic/user2.jpg)
+}
+.userbox #userimg03{
+	width: 40px;
+	height: 40px;
+	background-image: url(../pic/user1.jpg)
+}
+.userbox #userimg04{
+	width: 43px;
+	height: 40px;
+	background-image: url(../pic/user6.jpg)
+}
+.userbox #userimg05{
+	width: 43px;
+	height: 43px;
+	background-image: url(../pic/user4.jpg)
+}
+.userbox #userimg06{
+	width: 42.4px;
+	height: 42.4px;
+	background-image: url(../pic/user5.jpg)
+}
+/*footer部分*/
+#footer{
+	width: 1920px;
+	height: 150px;
+	display: flex;
+	flex-direction: row;
+
+}
+div#footer span{
+	font-family: "微软雅黑";
+	font-size: 25px;
+	color: #a19f9f;
+	position: relative;
+	left: 360px;
+	top: 50px;
+}
+div#footer a{
+	font-family: "微软雅黑";
+	font-size: 25px;
+	color: #a19f9f;
+	margin-left: 22px;
+	position: relative;
+	left: 420px;
+	top: 50px;
+}
+div#footer a:hover{
+	color: pink;
+}
+div#footer #logo1{
+	position: relative;
+	left: 840px;
+	top: 50px;
+	width: 40px;
+	height:37px;
+	background-image: url(../pic/logo1.jpg)
+}
+div#footer #logo1:hover{
+	background-image: url(../pic/logo11.jpg)
+}
+div#footer #logo2{
+	position: relative;
+	left: 890px;
+	top: 50px;
+	width: 40px;
+	height:40px;
+	background-image: url(../pic/logo2.jpg)
+}
+div#footer #logo2:hover{
+	background-image: url(../pic/logo22.jpg)
+}
+
+
+@media (min-width: 1920px) 
+	and (max-width: 2560px){
+}
